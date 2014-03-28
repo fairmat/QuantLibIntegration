@@ -52,7 +52,7 @@ namespace QuantLibIntegration.Utilities
             double[,] zrvalue = (double[,])ArrayHelper.Concat(x.ToArray(), y.ToArray());
             pf.Expr = zrvalue;
             this.function = pf;
-            this.maxT = x.Max();
+            this.maxT = x.Max()+130;// add  years in order to handle date approximations
         }
 
         protected override double zeroYieldImpl(double t)

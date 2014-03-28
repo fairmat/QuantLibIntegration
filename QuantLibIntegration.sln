@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantLibIntegration.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantLibIntegration", "QuantLibIntegration\QuantLibIntegration.csproj", "{87374093-7F4F-468F-8B2C-E06294B42130}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunTests", "RunTests\RunTests.csproj", "{00F6CADA-8F26-404D-8A8D-3B388BF93691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{87374093-7F4F-468F-8B2C-E06294B42130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87374093-7F4F-468F-8B2C-E06294B42130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87374093-7F4F-468F-8B2C-E06294B42130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F6CADA-8F26-404D-8A8D-3B388BF93691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F6CADA-8F26-404D-8A8D-3B388BF93691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F6CADA-8F26-404D-8A8D-3B388BF93691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F6CADA-8F26-404D-8A8D-3B388BF93691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

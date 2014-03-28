@@ -92,11 +92,12 @@ namespace QuantLibIntegration.InterestRateModels
 
             List<CalibrationHelper> swaptions = new List<CalibrationHelper>();
             for (int i = 0; i < irmd.SwapDates.Length; i++)
+                for (int j = 0; j < irmd.SwapDuration.Length; j++)
             {
-                Quote vol = new SimpleQuote(irmd.SwapRates[i]);
+                Quote vol = new SimpleQuote(irmd.SwaptionsVolatility[j,i]);
                 CalibrationHelper helper =
                                      new SwaptionHelper(new Period((int)irmd.SwapDates[i], TimeUnit.Years),
-                                                        new Period((int)irmd.SwapDuration[i], TimeUnit.Years),
+                                                        new Period((int)irmd.SwapDuration[j], TimeUnit.Years),
                                                         new Handle<Quote>(vol),
                                                         index,
                                                         new Period(1, TimeUnit.Years),
